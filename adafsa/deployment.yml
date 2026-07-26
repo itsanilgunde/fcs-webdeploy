@@ -13,6 +13,9 @@ spec:
       labels:
         app: fcs-web
     spec:
+      imagePullSecrets:
+      - name: dockerhub-secret
+
       containers:
       - name: fcs-web
         image: anilgunde/adafsa:latest
